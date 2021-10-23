@@ -1,0 +1,404 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,option,label,input,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: 'Schoolbell', cursive;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: flex;
+}
+body {
+	line-height: 1;
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* FIN DU RESET CSS*/
+
+html{
+	scroll-behavior: smooth;
+}
+.icone{
+	display: none;
+}
+#menuBoutton{
+	display: none;
+}
+nav input[type=checkbox]{
+	display: none;
+}
+header, nav > h1 {
+	background-color: grey;
+	width: 100%;
+	height: 65px;
+	align-items: center;
+	position: fixed;
+	opacity : 85%;
+	font-size: 22px;
+	display: flex;
+	justify-content: space-between;
+}
+nav ,ul, li, a{
+	display: flex;
+	text-decoration: none;
+	color: white;
+}
+li a {
+	margin-right: 16px;
+	margin-left: 8px;
+}
+
+h1 a{
+	font-weight: bold;
+	margin-right: 16px;
+	right: 0;
+}
+h1 a:hover{
+	text-decoration: underline;
+	font-size: 21px;
+}
+#logo{
+	width: 40%;
+}
+#banner{
+	background-image: url("media/banner.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	margin-top: auto;
+	padding-bottom: 28%;
+}
+#leLogo{
+	width: 55%;
+	padding-top: 10%;
+}	
+#banner, #logo{
+	display: flex;
+	justify-content: center;
+}
+.conteneur2{
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+.Titre_rubrique{
+	background-color:#ffff24;
+	width: 100%;
+}
+h3{ 
+	padding : 20px;
+	font-weight: bold;
+	font-size: 24px;
+}
+.rubrique {
+	width: 100%;
+	background-color: lemonchiffon;
+	display: inline-block;
+	padding: 20px 0px 20px 0px;
+}
+.text{
+	width: 50%;
+	float: left;
+	padding : 20px;
+	margin:auto;
+	text-align: justify;
+	font-size: 18px;
+}
+ #imgTransi{
+	position: inherit;
+}
+#monimglimo {
+	width: 38%;
+	margin:20px;
+	box-shadow: 3px 3px grey;
+}
+#monimgCitronVert {
+	margin: 20px;
+	width : 38%;
+	box-shadow: 3px 3px grey;
+}
+#macarte{
+	margin: 20px;
+	box-shadow: 3px 3px grey;
+	width: 40%;
+	height: 440px;
+}
+#conteneur3 , .lbl, input{
+	display: table;
+	margin: auto;
+	padding-top: 20px;
+	text-align: center;
+	border-radius: 8px;
+	font-size: 18px;
+	margin-bottom: 6px;
+}
+input{
+	padding : 4px;
+	background-color: #ffff24;
+	box-shadow: 2px 2px grey;
+}	
+.duo,  input{
+	display: flex;
+}
+#concent {
+	box-shadow: none;
+}
+#espacement{
+	padding-bottom: 20px;
+}
+#envoie:hover{
+	background-color: black;
+	color: #ffff24;
+	font-weight: bold;
+}
+#feed {
+	text-align : center; 
+	text-decoration: underline;
+	font-weight : bold;
+	padding :6px;
+	
+}
+#lesresaux{
+	display: block;
+	justify-content: center;
+	justify-content: space-evenly;
+}
+.reseau {
+	width : 5%;
+	padding: 8px;
+}
+#retrouve{
+	background-color: rgb(134, 134, 134);
+}
+input:hover{
+	background-color: white;
+}				
+
+/* FIN VERSION DESKTOP */
+
+@media screen and (max-width: 1080px) {
+	#imgTransi{
+		display: none;
+	}
+	
+	#macarte{
+		margin: 20px;
+		box-shadow: 3px 3px grey;
+		width: 38%;
+		height: 280px;
+	}
+}
+/* FIN TRANSITION TABLETTE TO DESKTOP */
+
+@media screen and (max-width: 768px) {
+	
+	html{
+		scroll-behavior: smooth;
+	}
+	header  {
+		display: flex;
+		background-color: grey;
+		width: 100%;
+		height: 45px;
+		color:white;
+		align-items: center;
+		position: fixed;
+		opacity : 85%;
+	}
+	h1 a{
+		text-decoration: none;
+		font-weight: bold;
+		color: white;
+		margin-right: 16px;
+		font-size: 20px;
+	}
+	h1 a:hover{
+		text-decoration: underline;
+		font-size: 19px;
+	}
+	nav input[type=checkbox]{
+		display: none;
+	}
+	nav ul{
+		display: none;
+		list-style-type: none;
+		background-color:grey;
+		width: 100%;
+	}
+	nav input[type=checkbox]:checked + ul {
+		display: block;
+		position: absolute;
+		top : 100%;
+		z-index: 1000;
+	}
+	nav a{
+		display: flex;
+		text-decoration: none;
+		padding: 6px 12px;
+		color: white;
+		text-align: justify;
+		align-items: center;
+		width: 45%;
+		border-bottom: solid black 1px;
+	}
+	nav ul> li {
+		padding:8px;
+	}
+	li a:hover {
+		border-bottom:2px #FFF solid;
+		font-weight: bold;
+	}
+	#menuBoutton{
+		display: block;
+		width: 8%;
+	}
+	.icone{
+		display: block;
+		width: 8%;
+		margin-right: 6px;
+	}
+	#logo{
+		width: 40%;
+	}
+	#banniere{
+		background-image: url("media/banner.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 100%;
+		margin-top: auto;
+		padding-bottom: 28%;
+		
+	}
+	#leLogo{
+		width: 55%;
+		padding-top: 10%;
+	}	
+	#banner, #logo{
+		display: flex;
+		justify-content: center;
+	}
+	.conteneur2{
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	#imgTransi{
+		display: none;
+	}
+	.Titre_rubrique{
+		background-color:#ffff24;
+		width: 100%;
+	}	
+	h3{ 
+		padding : 12px;
+		font-weight: bold;
+		font-size: 20px;
+	}
+	.rubrique {
+		width: 100%;
+		background-color: lemonchiffon;
+		display: block;
+	}
+	.text{
+		width: auto;
+		padding :10px;
+		text-align: justify;
+	}			
+	#monimglimo{
+		width: 60%;
+		box-shadow: 3px 3px grey;
+	}
+	#monimgCitronVert {
+		width : 60%;
+		box-shadow: 3px 3px grey;
+	}
+	#macarte{
+		box-shadow: 3px 3px grey;
+		width:54%;
+		height:260px;
+		margin-bottom: 20px;
+	}
+  	#conteneur3 , .lbl, input{
+		display: table;
+		margin: auto;
+		padding-top: 20px;
+		
+		text-align: center;
+		border-radius: 8px;
+	}
+	.lbl{
+		padding : 18px auto 4px auto;
+	}
+	input{
+		padding : 4px;
+		background-color: #ffff24;
+		box-shadow: 2px 2px grey;
+		
+	}	
+	input:hover{
+		background-color: white;
+	}
+	#concent {
+		box-shadow: none;
+	}
+	#espacement{
+		padding-bottom: 20px;
+	}
+	#envoie:hover{
+		background-color: black;
+		color: #ffff24;
+		font-weight: bold;
+	}
+	#feed {
+		text-align : center; 
+		text-decoration: underline;
+		font-weight : bold;
+		padding :8px;
+	}
+	#lesresaux{
+		display: block;
+		justify-content: center;
+		justify-content: space-evenly;
+	}
+	.reseau {
+		width : 6%;
+	}
+	#retrouve{
+		background-color: rgb(134, 134, 134);
+	}
+	.duo,  input{
+		display: block;
+	}
+}
+
+
+

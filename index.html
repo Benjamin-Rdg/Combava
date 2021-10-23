@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Combava</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+
+	
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="conteneur">
+				<label for="mobile" id=><img src="media/menu2.png" alt="Boutton du menu" id="menuBoutton"></label>
+				<input type="checkbox" id="mobile" role="button">
+			  	<ul>
+					<li><a href="#part1"><img src="icone/loupe.png" alt="icone" class="icone">  Nous découvrir</a></li>
+					<li><a href="#part2"><img src="icone/listeingre.png" alt="icone" class="icone">  Nos ingrédients</a></li>
+					<li><a href="#part3"><img src="icone/evenement.png" alt="icone" class="icone">  Nos événements</a></li>
+					<li><a href="#part4"><img src="icone/inscription.png" alt="icone" class="icone">  Inscription</a></li>
+			 	</ul>
+			</div>
+		</nav>
+		<div id="titre"><h1><a href="http://combava.com/" >Combava</a></h1/div>
+	</header>
+	
+	<div id ="banner">
+		<div id="logo">
+			<img src="media/logo.png" alt="image logo" id="leLogo">
+		</div>
+	</div>
+
+	<div class="conteneur2" >
+		<div class="Titre_rubrique" >
+			<h3  id="part1">Nous découvrir</h3>
+		</div>
+		<div class="rubrique">
+				<p class="text">
+					Dans les années 50 aux Etats-Unis, les stands étaient énormements présents et démocratisés dans les villes, des enfants s'amusaient à monter des stands de citronnade maison devant chez eux afin de gagner un peu d'argent.   
+				</p>
+				<p class="text">
+					L'entreprise "David's Lemonade" a eu l'idée de reprendre ce concept de stands à 5cts et de le répandre dans tout le pays. Ce fut un énorme succès mais 70 ans après, cette entreprise a disparu. Mais aujourd'hui, l'association Combava fait revivre l'esprit et les valeurs David's Lemonade à travers ses différents évènements !
+				</p>	
+				<img src="media/nousDecouvririmg.jpg" alt="Une image" class="text" id="imgTransi">
+			<img id="monimglimo" alt="image citronade avec citron sur une table en bois" src="media/nousDecouvririmg2.jpg"/>
+		</div>
+	
+		<div class="Titre_rubrique">
+			<h3 id="part2">Nos ingrédients</h3>
+		</div>
+		<div class="rubrique">
+				<p class="text">
+					Les citronnades de l'association Comabava sont nées d'un regroupement de producteurs indépendants d'agrumes du sud de la France, cela permet d'avoir diiférernts agrumes frais, bio et de production locale pour proposer des citronnades avec un goût unique tout en gardant une boisson saine sans ajouts de sucre, additif, conservateur       
+				</p>	
+				<p class="text">
+					De plus, les producteurs adhérents seront présents lors des dégustations pour défendre la qualité de leurs produits. N'hésitez pas à venir à une de nos dégustations en vous inscrivant grâce à notre formulaire !
+				</p>
+				<img src="media/ingredient2.jpg" alt="imageEvent" class="text" id="imgTransi" >
+			<img id="monimgCitronVert" alt="Stands David's Lemonade" src="media/ingredientimg.jpg">
+		</div>
+	
+		<div class="Titre_rubrique">
+			<h3 id="part3">Nos événements</h3>
+		</div>
+		<div class="rubrique">
+			<p class="text">
+				L'association Combava a eu l'idée de proposer des dégustation privées VIP de citronnade tout autour du pays, à la façon des négociants en vin. Vous retrouverez tous nos événements sur la carte ci-dessous ! 
+			<p>
+			<p class="text">
+				Veuillez noter que tous nos événements demarrent vers <b>15h est se termine vers 17h</b> et que le nombre pour les dégustations sont limitées en raison de la lutte contre la pandémie mondiale. 
+				<b> Le port du masque, application des gestes barrières et distanciation sociale seront à respecter avec grande importance !</b>  
+			</p>
+			<img src="media/evenementimg.jpg" alt="imageEvent" class="text" id="imgTransi" >
+			<iframe id="macarte" src="https://www.google.com/maps/d/embed?mid=1vd7Xp6As38HyMlt0znLxxsO97fLVEOeb" ></iframe>
+		</div>
+	
+		<div class="Titre_rubrique">
+			<h3 id="part4">Inscription</h3>
+		</div>
+		<div class="rubrique">		
+			<form action="#" method="post" autocomplete="off">
+				<div class="duo">
+					<label class ="lbl" for="nom">Nom :</label>
+					<input   type="text" id="nom" required placeholder="Nom">
+					<label class ="lbl"  for="prenom">Prenom :</label>
+					<input   type="text" id="prenom" required placeholder="Prenom">
+				</div>
+				<div class="duo">
+					<label class ="lbl"  for="mail">Email :</label>
+					<input   type="text" id="mail" required placeholder="Votre Email">
+					<label class ="lbl"  for="tel">N°de telephone :</label>
+					<input   type="text" id="tel" required placeholder="Votre N° de Telephone">
+				</div>		
+				<div>
+					<label class ="lbl"  for="listEvent">Choisissez un évènement : </label>
+					<select name="évènement" id="listEvent" required>
+						<option value="1">Choisir une option </option>
+						<option value="2">AMAP les Grand’Goules</option>
+						<option value="3">AMAP Bio des 2 rives</option>
+						<option value="4">Amap des Voiliers</option>
+						<option value="5">Le Pompin'Ambour</option>
+						<option value="6">AMAP BIO’RILLAC</option>								<option value="7">AMAP</option>
+						<option value="8">Pensees Bio</option>
+						<option value="9">Bio & Sens Montpellier - Juvignac</option>
+						<option value="10">Biossetan</option>
+						<option value="11">La Canopée</option>
+						<option value="12">Naturéo</option>
+						<option value="13">Rayons Verts</option>
+						<option value="14">BIOMONDE</option>
+						<option value="15">Bio c' Bon</option>
+						<option value="16">Les Comptoirs de la Bio</option>
+					</select>
+				</div>
+				<div>
+					<label class ="lbl"  for="concent">Souhaitez-vous vous abonner a la newletter ?</label>
+					<input   type="checkbox"  id="concent"  ></input>
+				</div>
+				<div id="espacement">
+					<label class ="lbl"  for="envoie"></label>
+					<input  value="Envoie du formulaire" type="submit"  id="envoie"></input>
+				</div>
+			</form>
+		</div>		
+	</div>	
+		
+	<footer>
+		<div class="conteneur2">
+			<div id="retrouve">		
+				<div id="contact">
+					<h4 id="feed">Retrouvez-nous sur :</h4>
+					<div id="lesresaux">
+						<img alt="Facebook" src="media/FB.png" class="reseau"/>
+						<img alt="Instagram" src="media/IG.png" class="reseau"/>
+						<img alt="Twitter" src="media/TW.png" class="reseau"/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>	
+</body>
